@@ -87,3 +87,42 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/*===============================
+=            Columns            =
+===============================*/
+main {
+  margin: 0 30px;
+}
+
+nav {
+  /*column-width: 150px; // width at least 150px
+  column-count: 4;*/
+  columns: 4 150px;
+  column-gap: 3rem;
+  column-rule: 1px solid #999;
+  column-fill: balance;
+
+  ul {
+    margin-top: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    background-color: green;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+
+/*=====  End of Columns  ======*/
