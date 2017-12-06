@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      
+
+      <main role="main">
+
+        <h1>Layout Responsive Fluid Columns Using CSS</h1>
+
+        <nav>
+          <ul>
+            <li><a href="#">001</a></li>
+            <li><a href="#">002</a></li>
+            <li><a href="#">003</a></li>
+            <li><a href="#">004</a></li>
+            <li><a href="#">005</a></li>
+            <li><a href="#">006</a></li>
+            <li><a href="#">007</a></li>
+            <li><a href="#">008</a></li>
+            <li><a href="#">009</a></li>
+            <li><a href="#">010</a></li>
+            <li><a href="#">011</a></li>
+            <li><a href="#">012</a></li>
+            <li><a href="#">013</a></li>
+            <li><a href="#">014</a></li>
+            <li><a href="#">015</a></li>
+            <li><a href="#">016</a></li>
+            <li><a href="#">017</a></li>
+            <li><a href="#">018</a></li>
+            <li><a href="#">019</a></li>
+            <li><a href="#">020</a></li>
+          </ul>
+        </nav>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
